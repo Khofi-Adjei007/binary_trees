@@ -36,6 +36,7 @@ void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
 int binary_tree_balance(const binary_tree_t *tree);
+int binary_tree_is_complete(const binary_tree_t *tree);
 
 /* Binary Tree Traversal */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
