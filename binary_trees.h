@@ -48,16 +48,26 @@ size_t binary_tree_depth(const binary_tree_t *tree);
 size_t binary_tree_size(const binary_tree_t *tree);
 size_t binary_tree_leaves(const binary_tree_t *tree);
 size_t binary_tree_nodes(const binary_tree_t *tree);
+size_t binary_tree_height(const binary_tree_t *tree);
+size_t binary_tree_depth(const binary_tree_t *tree);
+size_t binary_tree_size(const binary_tree_t *tree);
 
 /* Binary Tree Sibling and Uncle */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
 /* Binary Tree Ancestors */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
 /* Binary Tree Level Order Traversal */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_delete(binary_tree_t *tree);
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Binary Search Tree (BST) Operations */
 int binary_tree_is_bst(const binary_tree_t *tree);
@@ -79,6 +89,10 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+int binary_tree_is_leaf(const binary_tree_t *node);
+int binary_tree_is_root(const binary_tree_t *node);
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+int heap_extract(heap_t **root);
 
 /* UTILITIES */
 void binary_tree_print(const binary_tree_t *);
