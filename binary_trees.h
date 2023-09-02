@@ -62,6 +62,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_delete(binary_tree_t *tree);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Binary Search Tree (BST) Operations */
 int binary_tree_is_bst(const binary_tree_t *tree);
