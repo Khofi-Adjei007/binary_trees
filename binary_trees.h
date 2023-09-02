@@ -94,6 +94,8 @@ int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 int heap_extract(heap_t **root);
+int binary_tree_is_full(const binary_tree_t *tree);
+
 
 /* UTILITIES */
 void binary_tree_print(const binary_tree_t *);
