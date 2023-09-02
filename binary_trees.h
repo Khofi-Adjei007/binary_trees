@@ -39,7 +39,7 @@ int binary_tree_is_root(const binary_tree_t *node);
 int binary_tree_balance(const binary_tree_t *tree);
 int binary_tree_is_complete(const binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
-
+avl_t *avl_insert(avl_t **tree, int value);
 
 /* Binary Tree Traversal */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
