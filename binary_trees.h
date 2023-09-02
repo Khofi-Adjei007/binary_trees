@@ -30,6 +30,7 @@ typedef struct binary_tree_s heap_t;
 /* PROTOTYPES */
 /* Binary Tree Basics */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 void binary_tree_delete(binary_tree_t *tree);
 
 /* Binary Tree Properties */
